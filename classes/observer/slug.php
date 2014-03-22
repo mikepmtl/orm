@@ -60,7 +60,7 @@ class Observer_Slug extends Observer
 		$props = $class::observers(get_class($this));
 		$this->_source    = isset($props['source']) ? $props['source'] : static::$source;
 		$this->_property  = isset($props['property']) ? $props['property'] : static::$property;
-		$this->_separator = isset($props['separator']) ? $props['separator'] : static::$separator;
+                $this->_separator = isset($props['separator']) ? $props['separator'] : static::$separator;
 	}
 
 	/**
@@ -118,7 +118,7 @@ class Observer_Slug extends Observer
 	}
 
 	/**
-	 * Creates a new unique slug and update the object
+	 * Creates a new slug and update the object
 	 *
 	 * @param  Model  Model object subject of this observer method
 	 */
